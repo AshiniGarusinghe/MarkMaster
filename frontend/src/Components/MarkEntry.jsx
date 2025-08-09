@@ -20,5 +20,13 @@ const MarksEntry = () => {
     });
   };
 
+  // Handle new marks submission
+  const handleSubmit = () => {
+    // Validate form fields
+    if (!name || !marks) {
+      alert("❗ Please fill in both fields.");
+      return;
+    }
+
 
 }
