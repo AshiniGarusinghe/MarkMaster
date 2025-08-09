@@ -13,5 +13,12 @@ const MarksEntry = () => {
     fetchData();
   }, []);
 
+  // Function to fetch all marks data from backend
+  const fetchData = () => {
+    axios.get("http://localhost:5000/list").then((res) => {
+      setData(res.data);
+    });
+  };
+
 
 }
